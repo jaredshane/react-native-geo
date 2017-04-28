@@ -52,5 +52,14 @@ export default class PlaceMap extends Component {
 const styles = StyleSheet.create({
   map: {
     flex: 1
+  },
+  button: {
+    backgroundColor: 'red',
+    padding: 5,
+    margin: 5
+  },
+  buttonText: {
+    fontSize: 12,
+    color: 'white'
   }
 })
