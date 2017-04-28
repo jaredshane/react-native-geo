@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 
 import PlaceMap from './place_map'
+import AddPlace from './add_place'
 
 export default class Places extends Component {
 
