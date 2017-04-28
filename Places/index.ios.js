@@ -46,6 +46,12 @@ export default class Places extends Component {
     this.setState({selectedTab: tab})
   }
 
+  handleAddPlace(annotation) {
+    const annotations = this.state.annotations.slice()
+    annotations.push(annotation)
+    this.setState({ annotations })
+  }
+
   render() {
     return (
       <TabBarIOS>
