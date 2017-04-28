@@ -66,9 +66,7 @@ export default class Places extends Component {
           icon={require('./assets/pin.png')}
           selected={this.state.selectedTab === 1}
           onPress={this.handleTabPress.bind(this, 1)}>
-            <View style={styles.view}>
-              <Text style={styles.text}>Add Place</Text>
-            </View>
+            <AddPlace onAddPlace={this.handleAddPlace.bind(this)}/>
           </TabBarIOS.Item>
       </TabBarIOS>
     );
